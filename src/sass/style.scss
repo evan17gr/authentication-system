@@ -1,0 +1,113 @@
+@import "variables";
+
+*{
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: $font;
+}
+
+
+body{
+
+    background: $color1;
+    background: linear-gradient(240deg,$color1 -50%, $color6 0%, $color7 30%, $color2 60%);
+   
+}
+
+ #root{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    width: 75%;
+    
+    
+}
+
+.left{
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/holi-2416686_640.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.right h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: $color5;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right{
+    background-color: black;
+    height: 600px;
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 0 10px  10px 0;
+}
+
+
+
+.right input{
+    width: 70%;
+    height: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    font-family: $font2;
+    padding: 0.6rem;
+}
+
+.submit-button{
+    width: 70%;
+    margin-bottom: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    color: white;
+    background-color:$color4;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+p{
+    color: $white;
+    font-size: 1.1rem;
+}
+
+.sign-in{
+    cursor: pointer;
+    text-decoration: none;
+    color: $white;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+
